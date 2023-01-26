@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/console/url/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://spotdl.github.io/spotify-downloader/reference/console/web/</loc>
          <lastmod>2023-01-26</lastmod>
          <changefreq>daily</changefreq>
@@ -141,6 +146,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/providers/lyrics/synced/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://spotdl.github.io/spotify-downloader/reference/types/</loc>
          <lastmod>2023-01-26</lastmod>
          <changefreq>daily</changefreq>
@@ -156,7 +166,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/types/options/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://spotdl.github.io/spotify-downloader/reference/types/playlist/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/types/result/</loc>
          <lastmod>2023-01-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -196,6 +216,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/utils/downloader/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://spotdl.github.io/spotify-downloader/reference/utils/ffmpeg/</loc>
          <lastmod>2023-01-26</lastmod>
          <changefreq>daily</changefreq>
@@ -211,7 +236,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/utils/logging/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://spotdl.github.io/spotify-downloader/reference/utils/m3u/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/utils/matching/</loc>
          <lastmod>2023-01-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -227,6 +262,11 @@
     </url>
     <url>
          <loc>https://spotdl.github.io/spotify-downloader/reference/utils/spotify/</loc>
+         <lastmod>2023-01-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://spotdl.github.io/spotify-downloader/reference/utils/static/</loc>
          <lastmod>2023-01-26</lastmod>
          <changefreq>daily</changefreq>
     </url>

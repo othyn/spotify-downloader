@@ -21,7 +21,7 @@
         <link rel="next" href="../troubleshooting/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6b71719e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
@@ -167,7 +167,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -432,6 +432,19 @@
     Web UI (User Interface)
   </a>
   
+    <nav class="md-nav" aria-label="Web UI (User Interface)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-location" class="md-nav__link">
+    Download location
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -683,6 +696,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/types/result/" class="md-nav__link">
+        result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/types/saved/" class="md-nav__link">
         saved
       </a>
@@ -699,6 +726,20 @@
     <li class="md-nav__item">
       <a href="../reference/types/song/" class="md-nav__link">
         song
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/types/options/" class="md-nav__link">
+        options
       </a>
     </li>
   
@@ -772,6 +813,20 @@
           console
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/console/url/" class="md-nav__link">
+        url
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -973,6 +1028,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/utils/static/" class="md-nav__link">
+        static
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/utils/archive/" class="md-nav__link">
         archive
       </a>
@@ -1015,6 +1084,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/utils/matching/" class="md-nav__link">
+        matching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/utils/downloader/" class="md-nav__link">
+        downloader
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/utils/formatter/" class="md-nav__link">
         formatter
       </a>
@@ -1031,6 +1128,20 @@
     <li class="md-nav__item">
       <a href="../reference/utils/config/" class="md-nav__link">
         config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/utils/logging/" class="md-nav__link">
+        logging
       </a>
     </li>
   
@@ -1308,6 +1419,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/providers/lyrics/synced/" class="md-nav__link">
+        synced
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/providers/lyrics/musixmatch/" class="md-nav__link">
         musixmatch
       </a>
@@ -1415,6 +1540,19 @@
   <a href="#web-ui-user-interface" class="md-nav__link">
     Web UI (User Interface)
   </a>
+  
+    <nav class="md-nav" aria-label="Web UI (User Interface)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-location" class="md-nav__link">
+    Download location
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1572,7 +1710,7 @@ This will download new songs and remove the ones that are no longer present in t
 <div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>sync<span class="w"> </span><span class="o">[</span>query<span class="o">]</span><span class="w"> </span>--save-file<span class="w"> </span><span class="o">[</span>fileName<span class="o">]</span>
 </code></pre></div>
 <p>example:</p>
-<div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>sync<span class="w"> </span>https://open.spotify.com/playlist/37i9dQZF1E8UXBoz02kGID<span class="w"> </span>--save-file<span class="w"> </span><span class="s1">&#39;the-weeknd.sync.spotdl&#39;</span>
+<div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>sync<span class="w"> </span>https://open.spotify.com/playlist/37i9dQZF1E8UXBoz02kGID<span class="w"> </span>--save-file<span class="w"> </span><span class="s2">&quot;the-weeknd.sync.spotdl&quot;</span>
 </code></pre></div>
 <blockquote>
 <p>Note: The sync file has to end with .spotdl</p>
@@ -1584,7 +1722,7 @@ This will download new songs and remove the ones that are no longer present in t
 <div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>sync<span class="w"> </span><span class="o">[</span>fileName<span class="o">]</span>
 </code></pre></div>
 <p>example:</p>
-<div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>sync<span class="w"> </span><span class="s1">&#39;the-weeknd.sync.spotdl&#39;</span>
+<div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>sync<span class="w"> </span><span class="s2">&quot;the-weeknd.sync.spotdl&quot;</span>
 </code></pre></div>
 </details>
 <h2 id="saving">Saving<a class="headerlink" href="#saving" title="Permanent link">¤</a></h2>
@@ -1607,6 +1745,9 @@ This will download new songs and remove the ones that are no longer present in t
 <p>To start the web UI, run</p>
 <div class="language-bash highlight"><pre><span></span><code>spotdl<span class="w"> </span>web
 </code></pre></div>
+<h3 id="download-location">Download location<a class="headerlink" href="#download-location" title="Permanent link">¤</a></h3>
+<p>By default web ui downloads files to a special directory, to overwrite this behaviour
+add option <code>--web-use-output-dir</code> this will change to output directory back to <code>--output</code></p>
 <h2 id="config-file">Config file<a class="headerlink" href="#config-file" title="Permanent link">¤</a></h2>
 <h3 id="config-file-location">Config file location<a class="headerlink" href="#config-file-location" title="Permanent link">¤</a></h3>
 <p>The config file is located at <code>C:\Users\user\.spotdl\config.json</code>
@@ -1630,42 +1771,52 @@ or <code>~/.spotdl/config.json</code> under linux</p>
 </code></pre></div>
 <h3 id="default-config">Default config<a class="headerlink" href="#default-config" title="Permanent link">¤</a></h3>
 <div class="language-json highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;load_config&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;simple_tui&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cache_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C:\\Users\\username\\.spotdl\\.spotipy&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5f573c9620494bae87890c0f08a60293&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;client_secret&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;212476d9b0f3472eaa762d90b19b0ba8&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;auth_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;user_auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;headless&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cache_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/username/.spotdl/.spotipy&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;no_cache&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;max_retries&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;audio_providers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;youtube-music&quot;</span>
 <span class="w">    </span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;lyrics_providers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;genius&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;azlyrics&quot;</span>
-<span class="w">        </span><span class="s2">&quot;musixmatch&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;azlyrics&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;musixmatch&quot;</span>
 <span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;playlist_numbering&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;scan_for_songs&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;m3u&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{artists} - {title}.{output-ext}&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;overwrite&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;skip&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;search_query&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;ffmpeg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ffmpeg&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;bitrate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;ffmpeg_args&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mp3&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;save_file&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;m3u&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{artists} - {title}.{output-ext}&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;overwrite&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;skip&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5f573c9620494bae87890c0f08a60293&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;client_secret&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;212476d9b0f3472eaa762d90b19b0ba8&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;auth_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;user_auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;search_query&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;filter_results&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;threads&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;no_cache&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;cookie_file&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;headless&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;restrict&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;print_errors&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;sponsor_block&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;preload&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;archive&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;playlist_numbering&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="nt">&quot;load_config&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;simple_tui&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;fetch_albums&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;id3_separator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ytm_data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;web_use_output_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8800</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;keep_alive&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;allowed_origins&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="cli-command-line-interface">CLI (Command Line Interface)<a class="headerlink" href="#cli-command-line-interface" title="Permanent link">¤</a></h2>
@@ -1674,23 +1825,30 @@ or <code>~/.spotdl/config.json</code> under linux</p>
   -h, --help            show this help message and exit
 
 Main options:
-  {download,save,web,sync,meta}
+  {download,save,web,sync,meta,url}
                         The operation to perform.
                         download: Download the songs to the disk and embed metadata.
                         save: Saves the songs metadata to a file for further use.
                         web: Starts a web interface to simplify the download process.
                         sync: Removes songs that are no longer present, downloads new ones
                         meta: Update your audio files with metadata
-  query                 Spotify URL for a song/playlist/album/artist/etc. to download. For album searching, include &#39;album:&#39; and optional &#39;artist:&#39; tags (ie. &#39;album:the album name&#39; or &#39;artist:the artist album: the album&#39;).
+                        url: Get the download URL for songs
+
+  query                 Spotify/YouTube URL for a song/playlist/album/artist/etc. to download.
+                        For album searching, include &#39;album:&#39; and optional &#39;artist:&#39; tags
+                        (ie. &#39;album:the album name&#39; or &#39;artist:the artist album: the album&#39;).
                         For manual audio matching, you can use the format &#39;YouTubeURL|SpotifyURL&#39;
+                        You can only use album/playlist/tracks urls when downloading/matching youtube urls.
+                        When using youtube url without spotify url, you won&#39;t be able to use `--fetch-albums` option.
+
   --audio [{youtube,youtube-music} ...]
                         The audio provider to use. You can provide more than one for fallback.
-  --lyrics [{genius,musixmatch,azlyrics} ...]
+  --lyrics [{genius,musixmatch,azlyrics,synced} ...]
                         The lyrics provider to use. You can provide more than one for fallback.
   --config              Use the config file to download songs. It&#39;s located under C:\Users\user\.spotdl\config.json or ~/.spotdl/config.json under linux
   --search-query SEARCH_QUERY
-                        The search query to use, available variables: {title}, {artists}, {artist}, {album}, {album-artist}, {genre}, {disc-number}, {disc-count}, {duration}, {year}, {original-date}, {track-number},
-                        {tracks-count}, {isrc}, {track-id}, {publisher}, {list-length}, {list-position}, {list-name}, {output-ext}
+                        The search query to use, available variables: {title}, {artists}, {artist}, {album}, {album-artist}, {genre}, {disc-number}, {disc-count}, {duration}, {year}, {original-date},
+                        {track-number}, {tracks-count}, {isrc}, {track-id}, {publisher}, {list-length}, {list-position}, {list-name}, {output-ext}
   --dont-filter-results
                         Disable filtering results.
 
@@ -1707,34 +1865,43 @@ Spotify options:
   --no-cache            Disable caching (both requests and token).
   --cookie-file COOKIE_FILE
                         Path to cookies file.
+  --max-retries MAX_RETRIES
+                        The maximum number of retries to perform when getting metadata.
 
 FFmpeg options:
   --ffmpeg FFMPEG       The ffmpeg executable to use.
   --threads THREADS     The number of threads to use when downloading songs.
-  --bitrate {8k,16k,24k,32k,40k,48k,64k,80k,96k,112k,128k,160k,192k,224k,256k,320k,0,1,2,3,4,5,6,7,8,9}
-                        The constant/variable bitrate to use for the output file. Values from 0 to 9 are variable bitrates.
+  --bitrate {auto,disable,8k,16k,24k,32k,40k,48k,64k,80k,96k,112k,128k,160k,192k,224k,256k,320k,0,1,2,3,4,5,6,7,8,9}
+                        The constant/variable bitrate to use for the output file. Values from 0 to 9 are variable bitrates. Auto will use the bitrate of the original file. Disable will disable the
+                        bitrate option. (In case of m4a and opus files, this option will skip the conversion)
   --ffmpeg-args FFMPEG_ARGS
                         Additional ffmpeg arguments passed as a string.
-  --preserve-original-audio
-                        Preserve the original audio stream in case of m4a and opus files. This option might overwrite the bitrate option. Adding additional ffmpeg arguments might make this option useless.
 
 Output options:
   --format {mp3,flac,ogg,opus,m4a}
                         The format to download the song in.
   --save-file SAVE_FILE
-                        The file to save/load the songs data from/to. It has to end with .spotdl. If combined with the download operation, it will save the songs data to the file. Required for save/preload/sync
+                        The file to save/load the songs data from/to. It has to end with .spotdl. If combined with the download operation, it will save the songs data to the file. Required for
+                        save/preload/sync
   --preload             Preload the download url to speed up the download process.
-  --output OUTPUT       Specify the downloaded file name format, available variables: {title}, {artists}, {artist}, {album}, {album-artist}, {genre}, {disc-number}, {disc-count}, {duration}, {year}, {original-date}, {track-
-                        number}, {tracks-count}, {isrc}, {track-id}, {publisher}, {list-length}, {list-position}, {list-name}, {output-ext}
-  --m3u [M3U]           Name of the m3u file to save the songs to. Defaults to {list[0]}.m3u If you want to generate a m3u for each list in the query use {list-name}, If you want to generate a m3u file based on the first
-                        list in the query use {list[0]}, (0 is the first list in the query, 1 is the second, etc. songs don&#39;t count towards the list number)
-  --overwrite {skip,metadata,force}
-                        Overwrite existing files.
+  --output OUTPUT       Specify the downloaded file name format, available variables: {title}, {artists}, {artist}, {album}, {album-artist}, {genre}, {disc-number}, {disc-count}, {duration}, {year},
+                        {original-date}, {track-number}, {tracks-count}, {isrc}, {track-id}, {publisher}, {list-length}, {list-position}, {list-name}, {output-ext}
+  --m3u [M3U]           Name of the m3u file to save the songs to. Defaults to {list[0]}.m3u If you want to generate a m3u for each list in the query use {list}, If you want to generate a m3u file
+                        based on the first list in the query use {list[0]}, (0 is the first list in the query, 1 is the second, etc. songs don&#39;t count towards the list number)
+  --overwrite {metadata,skip,force}
+                        How to handle existing/duplicate files. (When combined with --scan-for-songs force will remove all duplicates, and metadata will only apply metadata to the latest song and
+                        will remove the rest. )
   --restrict            Restrict filenames to ASCII only
   --print-errors        Print errors (wrong songs, failed downloads etc) on exit, useful for long playlist
   --sponsor-block       Use the sponsor block to download songs from yt/ytm.
   --archive ARCHIVE     Specify the file name for an archive of already downloaded songs
   --playlist-numbering  Sets each track in a playlist to have the playlist&#39;s name as its album, and album art as the playlist&#39;s icon
+  --scan-for-songs      Scan the output directory for existing files. This option should be combined with the --overwrite option to control how existing files are handled. (Output directory is the
+                        last directory that is not a template variable in the output template)
+  --fetch-albums        Fetch all albums from songs in query
+  --id3-separator ID3_SEPARATOR
+                        Change the separator used in the id3 tags. Only supported for mp3 files.
+  --ytm-data            Use ytm data instead of spotify data when downloading using ytm link
 
 Web options:
   --host HOST           The host to use for the web server.
@@ -1742,9 +1909,10 @@ Web options:
   --keep-alive          Keep the web server alive even when no clients are connected.
   --allowed-origins [ALLOWED_ORIGINS ...]
                         The allowed origins for the web server.
+  --web-use-output-dir  Use the output directory instead of the session directory for downloads. (This might cause issues if you have multiple users using the web-ui at the same time)
 
 Misc options:
-  --log-level {CRITICAL,FATAL,ERROR,WARN,WARNING,INFO,DEBUG,NOTSET}
+  --log-level {CRITICAL,FATAL,ERROR,WARN,WARNING,INFO,MATCH,DEBUG,NOTSET}
                         Select log level.
   --simple-tui          Use a simple tui.
   --headless            Run in headless mode.
@@ -1801,7 +1969,7 @@ Other options:
     <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.tabs", "navigation.top"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>

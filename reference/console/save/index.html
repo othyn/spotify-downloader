@@ -21,7 +21,7 @@
         <link rel="next" href="../../utils/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6b71719e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.558e4712.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
@@ -167,7 +167,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -560,6 +560,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/result/" class="md-nav__link">
+        result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/saved/" class="md-nav__link">
         saved
       </a>
@@ -576,6 +590,20 @@
     <li class="md-nav__item">
       <a href="../../types/song/" class="md-nav__link">
         song
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/options/" class="md-nav__link">
+        options
       </a>
     </li>
   
@@ -651,6 +679,20 @@
           console
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../url/" class="md-nav__link">
+        url
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -916,6 +958,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../utils/static/" class="md-nav__link">
+        static
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../utils/archive/" class="md-nav__link">
         archive
       </a>
@@ -958,6 +1014,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../utils/matching/" class="md-nav__link">
+        matching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/downloader/" class="md-nav__link">
+        downloader
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../utils/formatter/" class="md-nav__link">
         formatter
       </a>
@@ -974,6 +1058,20 @@
     <li class="md-nav__item">
       <a href="../../utils/config/" class="md-nav__link">
         config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/logging/" class="md-nav__link">
+        logging
       </a>
     </li>
   
@@ -1251,6 +1349,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../providers/lyrics/synced/" class="md-nav__link">
+        synced
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../providers/lyrics/musixmatch/" class="md-nav__link">
         musixmatch
       </a>
@@ -1411,7 +1523,7 @@
 
 
 <h2 id="spotdl.console.save.save" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">save</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">downloader</span><span class="p">,</span> <span class="n">save_path</span><span class="p">,</span> <span class="n">m3u_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">_</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">save</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">downloader</span><span class="p">)</span></code>
 
 <a href="#spotdl.console.save.save" class="headerlink" title="Permanent link">¤</a></h2>
 
@@ -1423,9 +1535,6 @@
 <ul>
 <li>query: list of strings to search for.</li>
 <li>downloader: Already initialized downloader instance.</li>
-<li>save_path: Path to save the songs to.</li>
-<li>m3u_file: Path to the m3u file to save the songs to.</li>
-<li>preload: If True, preload the songs.</li>
 </ul>
 <h5 id="spotdl.console.save.save--notes">Notes<a class="headerlink" href="#spotdl.console.save.save--notes" title="Permanent link">¤</a></h5>
 <ul>
@@ -1434,11 +1543,7 @@
 
       <details class="quote">
         <summary>Source code in <code>spotdl/console/save.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
 <span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
@@ -1511,13 +1616,11 @@
 <span class="normal">90</span>
 <span class="normal">91</span>
 <span class="normal">92</span>
-<span class="normal">93</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">save</span><span class="p">(</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">save</span><span class="p">(</span>
     <span class="n">query</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
     <span class="n">downloader</span><span class="p">:</span> <span class="n">Downloader</span><span class="p">,</span>
-    <span class="n">save_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span>
-    <span class="n">m3u_file</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">preload</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-    <span class="o">**</span><span class="n">_</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Save metadata from spotify to the disk.</span>
@@ -1525,37 +1628,34 @@
 <span class="sd">    ### Arguments</span>
 <span class="sd">    - query: list of strings to search for.</span>
 <span class="sd">    - downloader: Already initialized downloader instance.</span>
-<span class="sd">    - save_path: Path to save the songs to.</span>
-<span class="sd">    - m3u_file: Path to the m3u file to save the songs to.</span>
-<span class="sd">    - preload: If True, preload the songs.</span>
 
 <span class="sd">    ### Notes</span>
 <span class="sd">    - This function is multi-threaded.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
+    <span class="n">save_path</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;save_file&quot;</span><span class="p">]</span>
+    <span class="n">m3u_file</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;m3u&quot;</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">save_path</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">DownloaderError</span><span class="p">(</span><span class="s2">&quot;Save file is not specified&quot;</span><span class="p">)</span>
+
     <span class="c1"># Parse the query</span>
-    <span class="n">songs</span> <span class="o">=</span> <span class="n">parse_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">downloader</span><span class="o">.</span><span class="n">threads</span><span class="p">)</span>
+    <span class="n">songs</span> <span class="o">=</span> <span class="n">parse_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">downloader</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;threads&quot;</span><span class="p">])</span>
     <span class="n">save_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">song</span><span class="o">.</span><span class="n">json</span> <span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">songs</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="nf">process_song</span><span class="p">(</span><span class="n">song</span><span class="p">:</span> <span class="n">Song</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">data</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">downloader</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">downloader</span><span class="o">.</span><span class="n">progress_handler</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
-                    <span class="sa">f</span><span class="s2">&quot;Could not find a match for </span><span class="si">{</span><span class="n">song</span><span class="o">.</span><span class="n">display_name</span><span class="si">}</span><span class="s2">&quot;</span>
-                <span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Could not find a match for </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">song</span><span class="o">.</span><span class="n">display_name</span><span class="p">)</span>
 
                 <span class="k">return</span> <span class="kc">None</span>
 
-            <span class="n">downloader</span><span class="o">.</span><span class="n">progress_handler</span><span class="o">.</span><span class="n">log</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s2">&quot;Found url for </span><span class="si">{</span><span class="n">song</span><span class="o">.</span><span class="n">display_name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">data</span><span class="si">}</span><span class="s2">&quot;</span>
-            <span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Found url for </span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">song</span><span class="o">.</span><span class="n">display_name</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 
             <span class="k">return</span> <span class="p">{</span><span class="o">**</span><span class="n">song</span><span class="o">.</span><span class="n">json</span><span class="p">,</span> <span class="s2">&quot;download_url&quot;</span><span class="p">:</span> <span class="n">data</span><span class="p">}</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exception</span><span class="p">:</span>
-            <span class="n">downloader</span><span class="o">.</span><span class="n">progress_handler</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">song</span><span class="si">}</span><span class="s2"> generated an exception: </span><span class="si">{</span><span class="n">exception</span><span class="si">}</span><span class="s2">&quot;</span>
-            <span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> generated an exception: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">song</span><span class="o">.</span><span class="n">display_name</span><span class="p">,</span> <span class="n">exception</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="kc">None</span>
 
@@ -1569,13 +1669,11 @@
                 <span class="n">downloader</span><span class="o">.</span><span class="n">thread_executor</span><span class="p">,</span> <span class="n">process_song</span><span class="p">,</span> <span class="n">song</span>
             <span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">preload</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">downloader</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;preload&quot;</span><span class="p">]:</span>
         <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">pool_worker</span><span class="p">(</span><span class="n">song</span><span class="p">)</span> <span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">songs</span><span class="p">]</span>
 
         <span class="c1"># call all task asynchronously, and wait until all are finished</span>
-        <span class="n">save_data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
-            <span class="n">downloader</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">downloader</span><span class="o">.</span><span class="n">aggregate_tasks</span><span class="p">(</span><span class="n">tasks</span><span class="p">))</span>
-        <span class="p">)</span>
+        <span class="n">save_data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">downloader</span><span class="o">.</span><span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">tasks</span><span class="p">)))</span>
 
     <span class="c1"># Save the songs to a file</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">save_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">save_file</span><span class="p">:</span>
@@ -1583,11 +1681,18 @@
 
     <span class="k">if</span> <span class="n">m3u_file</span><span class="p">:</span>
         <span class="n">gen_m3u_files</span><span class="p">(</span>
-            <span class="n">query</span><span class="p">,</span> <span class="n">m3u_file</span><span class="p">,</span> <span class="n">songs</span><span class="p">,</span> <span class="n">downloader</span><span class="o">.</span><span class="n">output</span><span class="p">,</span> <span class="n">downloader</span><span class="o">.</span><span class="n">output_format</span><span class="p">,</span> <span class="kc">False</span>
+            <span class="n">songs</span><span class="p">,</span>
+            <span class="n">m3u_file</span><span class="p">,</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;output&quot;</span><span class="p">],</span>
+            <span class="n">downloader</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;format&quot;</span><span class="p">],</span>
+            <span class="kc">False</span><span class="p">,</span>
         <span class="p">)</span>
 
-    <span class="n">downloader</span><span class="o">.</span><span class="n">progress_handler</span><span class="o">.</span><span class="n">log</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">&quot;Saved </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">save_data</span><span class="p">)</span><span class="si">}</span><span class="s2"> song</span><span class="si">{</span><span class="s1">&#39;s&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">save_data</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">save_path</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+        <span class="s2">&quot;Saved </span><span class="si">%s</span><span class="s2"> song</span><span class="si">%s</span><span class="s2"> to </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="nb">len</span><span class="p">(</span><span class="n">save_data</span><span class="p">),</span>
+        <span class="s2">&quot;s&quot;</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">save_data</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">save_path</span><span class="p">,</span>
     <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
       </details>
@@ -1647,7 +1752,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>
