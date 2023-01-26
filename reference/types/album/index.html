@@ -1753,7 +1753,7 @@
 
     <span class="n">songs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">track</span> <span class="ow">in</span> <span class="n">tracks</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">track</span><span class="p">[</span><span class="s2">&quot;is_local&quot;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="ow">or</span> <span class="n">track</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;is_local&quot;</span><span class="p">):</span>
             <span class="k">continue</span>
 
         <span class="n">release_date</span> <span class="o">=</span> <span class="n">album_metadata</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span>
